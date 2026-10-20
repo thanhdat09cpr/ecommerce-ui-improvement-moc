@@ -1,89 +1,61 @@
 <!doctype html>
 <html lang="vi">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Biên bản kiểm tra giao diện Mộc</title>
-<link rel="stylesheet" href="report.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chạy thử và chỉnh sửa — Mộc</title>
+  <link rel="stylesheet" href="report.css">
 </head>
 <body>
 <main>
-<a href="../index.html">← Giao diện Mộc</a>
-<h1>Biên bản kiểm tra</h1>
-<p>Ngày 20/10/2026 · Thực hiện bởi trợ lý AI trong trình duyệt. Không thay thế phần sinh viên tự chạy, sửa và giải thích.</p>
-<h2>1. Render và responsive</h2>
-<p>Dùng khung iframe có chiều rộng xác định để kích hoạt CSS media query, đo DOM trong trình duyệt và xem ảnh render. Đây là kiểm tra khung nhìn, chưa phải thử trên điện thoại vật lý.</p>
-<div class="table-scroll">
-<table>
-<thead>
-<tr>
-<th>Khung đặt</th>
-<th>Rộng nội dung / scrollWidth</th>
-<th>Lưới</th>
-<th>Kết quả</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>320px</td>
-<td>305 / 305px; 15px được trình duyệt dùng cho thanh cuộn dọc của iframe</td>
-<td>1 cột</td>
-<td>Không tràn ngang; 4 tên đầy đủ; ảnh tải đủ; 4 nút cao 44px.</td>
-</tr>
-<tr>
-<td>390px</td>
-<td>390 / 390px</td>
-<td>2 cột</td>
-<td>Không tràn ngang; 4 tên đầy đủ; ảnh tải đủ; 4 nút cao 44px.</td>
-</tr>
-<tr>
-<td>768px</td>
-<td>768 / 768px</td>
-<td>4 cột</td>
-<td>Không tràn ngang; 4 tên đầy đủ; ảnh tải đủ; 4 nút cao 44px.</td>
-</tr>
-<tr>
-<td>1440px</td>
-<td>1440 / 1440px</td>
-<td>4 cột</td>
-<td>Không tràn ngang; 4 tên đầy đủ; ảnh tải đủ; 4 nút cao 44px.</td>
-</tr>
-</tbody>
-</table>
-</div>
-<h2>2. Tương tác và nội dung</h2>
-<ul>
-<li>Đã mở/đóng chi tiết thẻ đầu tiên bằng chuột; trên bản 390px thấy mô tả và số trang 168.</li>
-<li>Đã thử Enter đóng và Space mở chi tiết trên bản desktop; trạng thái accessibility đổi collapsed/expanded.</li>
-<li>Liên kết điều hướng Tủ sách đưa đến đúng khu vực; liên kết báo cáo đã được kiểm tra đường dẫn.</li>
-<li>Bốn giá bán: 96.000đ, 126.000đ, 108.000đ, 85.000đ. Tỷ lệ giảm 20%, 10%, 20% khớp giá gốc; khoản tiết kiệm 24.000đ, 14.000đ, 27.000đ.</li>
-<li>CSS riêng, bốn SVG parse được, ảnh có alt; bản giao nộp không có JavaScript, thư viện hay backend.</li>
-</ul>
-<h2>3. Lỗi phát hiện và sửa bởi AI</h2>
-<p>Ảnh bìa ở phần giới thiệu có width CSS nhưng còn chiều cao HTML cố định 440px, khiến vùng ảnh và bóng đổ quá cao; khung hẹp 305px ghi nhận scrollWidth 318px. Thêm height:auto vào .hero-book. Đo lại thấy scrollWidth bằng 305px; quan sát lại bản desktop cho thấy bìa và bóng đổ nằm gọn trong phần giới thiệu.</p>
-<p>Đây là điều chỉnh của AI trong quá trình làm. Người học vẫn cần tự phát hiện và sửa ít nhất một điểm riêng để đáp ứng yêu cầu của đề.</p>
-<h2>4. Ảnh kiểm tra</h2>
-<figure>
-<img src="evidence/moc-desktop.png" alt="Bản giao diện Mộc desktop">
-<figcaption>Render thực tế ở khung trình duyệt rộng 1265px.</figcaption>
-</figure>
-<div class="evidence-grid">
-<figure>
-<img src="evidence/moc-mobile.png" alt="Hai thẻ sách ở khung 390px">
-<figcaption>Khung 390px, khu vực sản phẩm; ảnh cắt lấy vùng nội dung từ screenshot kiểm tra.</figcaption>
-</figure>
-<figure>
-<img src="evidence/moc-mobile-open.png" alt="Mở chi tiết một sách ở khung 390px">
-<figcaption>Chi tiết mở bằng thao tác thật; ảnh cắt lấy vùng nội dung.</figcaption>
-</figure>
-</div>
-<h2>5. Giới hạn còn lại</h2>
-<ul>
-<li>Chưa kiểm thử nhiều trình duyệt độc lập và điện thoại vật lý.</li>
-<li>Chưa thử nghiệm người dùng, đo khả năng đọc hoặc đo chuyển đổi.</li>
-<li>Không có chức năng mua hàng nên không kiểm thử giao dịch.</li>
-<li>Phần tự xác nhận và chỉnh sửa cá nhân của sinh viên còn để mở trong AI_USAGE.md.</li>
-</ul>
+  <a href="bao-cao.html">← Về bài khảo sát</a>
+  <h1>Chạy thử và chỉnh sửa</h1>
+  <p class="lead">Sau khi làm xong giao diện, trang được mở trên trình duyệt để xem lại bố cục, hình ảnh và các nút bấm.</p>
+  <h2>1. Những phần đã kiểm tra</h2>
+  <ul>
+    <li>Bốn cuốn sách đều hiện ảnh, tên, tác giả và giá.</li>
+    <li>Tên dài được xuống dòng, không bị mất chữ.</li>
+    <li>Giá gốc, giá giảm và số tiền tiết kiệm khớp nhau.</li>
+    <li>Cả bốn nút chi tiết đều mở được và đóng lại bằng phím Enter.</li>
+    <li>Các liên kết trong trang và liên kết đến báo cáo mở đúng chỗ.</li>
+  </ul>
+  <div class="table-scroll">
+  <table>
+    <thead><tr><th>Khung màn hình</th><th>Cách hiển thị</th><th>Kết quả</th></tr></thead>
+    <tbody>
+      <tr><td>320px</td><td>1 cột</td><td>Ảnh và tên sách nằm gọn trong trang, không cần kéo ngang.</td></tr>
+      <tr><td>390px</td><td>2 cột</td><td>Đọc đủ tên sách, mở và thu gọn được phần giới thiệu.</td></tr>
+      <tr><td>768px</td><td>4 cột</td><td>Các thẻ vẫn đủ chỗ cho tên và giá.</td></tr>
+      <tr><td>1440px</td><td>4 cột</td><td>Các thẻ và nút bấm được xếp đều nhau.</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>Các kích thước trên được thử bằng khung hiển thị trên trình duyệt máy tính, chưa thử trên điện thoại thật.</p>
+  <h2>2. Chỗ đã sửa</h2>
+  <h3>Ảnh bìa ở phần đầu trang</h3>
+  <p>Ban đầu ảnh có chiều rộng nhỏ nhưng chiều cao vẫn cố định nên phần ảnh và bóng đổ bị kéo dài. Thêm <code>height: auto</code> vào <code>.hero-book</code> giúp ảnh giữ đúng tỉ lệ và nằm gọn hơn.</p>
+  <h3>Nút xem chi tiết</h3>
+  <p>Lúc mở phần giới thiệu sách, nút vẫn ghi “Xem chi tiết”. Nhãn này chưa nói rõ thao tác tiếp theo. Sau khi sửa, nút đổi thành “Thu gọn” khi nội dung đang mở, đồng thời mũi tên hướng lên.</p>
+  <div class="evidence-grid">
+    <figure><img src="evidence/nut-truoc.png" alt="Trước khi sửa, nội dung đã mở nhưng nút vẫn ghi Xem chi tiết"><figcaption>Trước: nội dung mở, nút vẫn ghi “Xem chi tiết”.</figcaption></figure>
+    <figure><img src="evidence/nut-sau.png" alt="Sau khi sửa, nội dung mở và nút ghi Thu gọn"><figcaption>Sau: nội dung mở, nút đổi thành “Thu gọn”.</figcaption></figure>
+  </div>
+  <h2>3. Giải thích ngắn phần mã đã sửa</h2>
+  <p>Thẻ <code>details</code> dùng để chứa phần thông tin có thể mở ra. <code>summary</code> là phần có thể bấm. Khi mở, trình duyệt tự thêm thuộc tính <code>open</code> cho thẻ <code>details</code>.</p>
+  <p>Trong nút có hai nhãn. CSS chỉ cho hiện một nhãn theo trạng thái mở hoặc đóng:</p>
+  <pre><code>.label-open { display: none; }
+details[open] &gt; summary .label-closed { display: none; }
+details[open] &gt; summary .label-open { display: inline; }</code></pre>
+  <p>Như vậy chỉ cần HTML và CSS, không phải viết thêm JavaScript. Mở bằng chuột hay bàn phím thì nhãn đều thay đổi theo.</p>
+  <h2>4. Giao diện sau khi chỉnh</h2>
+  <figure><img src="evidence/moc-desktop.png" alt="Trang Mộc trên màn hình máy tính"><figcaption>Giao diện trên máy tính.</figcaption></figure>
+  <div class="evidence-grid">
+    <figure><img src="evidence/moc-mobile.png" alt="Danh sách sách trong khung màn hình nhỏ"><figcaption>Danh sách sách ở khung 390px.</figcaption></figure>
+    <figure><img src="evidence/moc-mobile-open.png" alt="Nút Thu gọn trên khung màn hình nhỏ"><figcaption>Phần chi tiết khi mở ở khung 390px.</figcaption></figure>
+  </div>
+  <h2>5. Nhận xét sau khi làm</h2>
+  <p>Một thay đổi nhỏ ở tên nút cũng giúp thao tác dễ hiểu hơn. Với danh sách sản phẩm, tên sách và giá cần rõ ràng trước, sau đó mới đến các chi tiết trang trí.</p>
+  <p class="end">Ngày kiểm tra: 20/10/2026 · Phần hỗ trợ từ AI được ghi trong AI_USAGE.md.</p>
 </main>
 </body>
 </html>

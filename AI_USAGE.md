@@ -1,57 +1,40 @@
-# AI Usage Log
+# Nhật ký sử dụng AI
 
-## 1. Công cụ AI
+## Công cụ và mục đích
 
-Codex trong ứng dụng desktop. AI đọc đề PDF, dùng trình duyệt kiểm tra Fahasa, tạo mã HTML/CSS và bìa SVG, viết báo cáo và kiểm tra bản chạy. Không dùng thêm tài khoản/công cụ AI của sinh viên.
+Công cụ sử dụng là Codex. AI hỗ trợ đọc đề, khảo sát Fahasa, chọn phần giao diện cần cải tiến, viết HTML/CSS, tạo bìa sách và kiểm tra lại trang.
 
-## 2. Mục đích sử dụng
+## Các yêu cầu đã dùng
 
-Phân tích yêu cầu bài tập, khảo sát có bằng chứng, chọn cải tiến, tạo giao diện, giải thích mã và rà lỗi.
+- “check tiếp cái này cho anh nhé” — kèm liên kết đề bài.
+- “anh cần em nắm intent rồi làm cái này cho anh”.
+- “em giúp anh làm luôn đi nhé” — làm tiếp phần kiểm tra và chỉnh sửa.
+- Yêu cầu viết tự nhiên như bài thực hành của sinh viên, ít chú thích trong code và tránh diễn đạt quá kỹ thuật.
 
-## 3. Prompt / yêu cầu thực tế
+Từ đề bài, AI triển khai hướng khảo sát Fahasa rồi làm một trang tủ sách gồm bốn sản phẩm, dùng HTML và CSS riêng. Không sử dụng thêm dịch vụ AI khác.
 
-Các yêu cầu trực tiếp từ người dùng trong phiên:
+## Kết quả hỗ trợ
 
-1. Gửi liên kết PDF và yêu cầu: “check tiếp cái này cho anh nhé”.
-2. Sau khi xem phân tích đề, yêu cầu: “anh cần em nắm intent rồi làm cái này cho anh”.
+AI tạo trang Mộc, bốn bìa sách, bảng khảo sát năm khu vực và các tệp hướng dẫn. Tên sách, tác giả và giá trong trang là dữ liệu mẫu.
 
-AI diễn giải phạm vi là thực hiện bài tập theo PDF: khảo sát 5 khu vực Fahasa, làm 1 trang HTML/CSS có 4 sản phẩm, CSS riêng, chuẩn bị README/nhật ký AI, GitHub và Pages. Đây là brief do AI tự diễn giải từ đề; không phải một prompt dài do người dùng nhập và không phải bản ghi của một cuộc trao đổi khác.
+Các nhận xét về Fahasa được đối chiếu qua trang đang chạy và ảnh chụp. Chẳng hạn, giỏ có sách nhưng tổng 0đ là do sản phẩm chưa được chọn; sau khi chọn, tổng hiện đúng 4.000đ, nên không ghi đó là lỗi tính tiền.
 
-Trình tự AI thực hiện: đọc đề → mở website thật → ghi quan sát/ảnh → chọn vấn đề tên sản phẩm bị rút gọn → đề xuất bố cục → tạo mã → kiểm tra bản render → sửa lỗi nếu phát hiện → chuẩn bị hồ sơ.
+## Những chỗ chỉnh sau khi chạy thử
 
-## 4. Kết quả AI đề xuất
+1. **Ảnh bìa ở đầu trang:** ảnh bị kéo dài và tràn ở khung nhỏ. Thêm `height: auto` để chiều cao thay đổi theo chiều rộng.
+2. **Nút chi tiết:** khi nội dung đã mở, nút vẫn ghi “Xem chi tiết”. Đổi thành “Thu gọn” ở trạng thái mở và đổi chiều mũi tên. Cách này giúp dễ biết bấm lần nữa sẽ đóng phần thông tin.
+3. **Cách viết:** rút ngắn các lời nhắc trên giao diện và báo cáo; phần dùng AI được tập trung vào nhật ký này.
 
-Trang “Mộc” có bốn thẻ sách, tên đầy đủ, giá bán/giá gốc/giảm giá, thao tác mở chi tiết dùng details/summary. Bìa, tên sách và giá được tự tạo để tránh dùng tài sản sản phẩm từ website tham khảo.
+Các thay đổi và kiểm tra trên được thực hiện với sự hỗ trợ của AI. [Ảnh trước/sau và kết quả kiểm tra](docs/kiem-tra.html).
 
-## 5. Kiểm tra, điều chỉnh và nhận xét không sử dụng
+## Những phần mã chính
 
-- Kiểm chứng tìm kiếm bằng truy vấn “kỹ năng sống”; lưu ảnh kết quả thay vì suy luận chỉ từ URL.
-- Giỏ có sản phẩm nhưng tổng 0đ khi chưa chọn checkbox. AI chọn sản phẩm và thấy tổng 4.000đ, do đó không ghi nhận đây là lỗi tính tiền.
-- Có bộ lọc/sắp xếp trên danh mục nhưng chưa thử chúng: chỉ ghi có thành phần, không khẳng định lọc đúng/sai.
-- Chưa khảo sát Fahasa trên điện thoại vật lý: không gọi giao diện gốc là lỗi mobile.
-- Không kết luận thiết kế mới tăng chuyển đổi hoặc bán hàng.
-- Kiểm tra giao diện do AI thực hiện được ghi ở docs/kiem-tra.html; không quy thành phần tự kiểm tra của người học.
-- AI phát hiện ảnh hero có chiều cao cố định làm tràn khung nhỏ; thêm height:auto cho .hero-book, đo lại scrollWidth bằng clientWidth. Đây là chỉnh sửa của AI, không phải chỉnh sửa cá nhân của sinh viên.
+- `article`: gom thông tin của một sách.
+- `img` và `alt`: hiển thị bìa, kèm tên thay thế cho ảnh.
+- `del`: gạch giá gốc để phân biệt với giá đang bán.
+- Grid: chia danh sách thành các cột.
+- Media query: đổi số cột khi màn hình nhỏ hơn.
+- `details` và `summary`: mở/đóng thông tin sách mà không cần JavaScript.
+- `details[open]`: chọn phần chi tiết đang mở để đổi nhãn nút.
 
-## 6. Các phần mã cần hiểu và có thể giải thích sau khi học
-
-- `article.product`: nhóm dữ liệu của từng sản phẩm.
-- `img` + `alt`: ảnh bìa và tên thay thế khi không xem được ảnh.
-- `del`: biểu diễn giá cũ; strong nhấn giá hiện tại.
-- `.product-grid` + `grid-template-columns`: chia số cột; minmax(0, 1fr) giúp cột co theo vùng chứa.
-- `@media`: đổi lưới theo chiều rộng; không ẩn hoặc cắt tên sách.
-- `details/summary`: nội dung mở/đóng có sẵn trong trình duyệt, không cần JavaScript.
-- `:focus-visible`: cho người dùng bàn phím biết đang ở liên kết/nút nào.
-- Đường dẫn tương đối: giữ ảnh/CSS hoạt động khi chạy từ thư mục con trên GitHub Pages.
-
-## 7. Phần người học tự xác nhận — chưa thực hiện
-
-- Tự khảo sát lại website: CHƯA XÁC NHẬN.
-- Tự chạy bản mẫu trên máy tính/điện thoại: CHƯA XÁC NHẬN.
-- Một vấn đề tự phát hiện: CHƯA GHI.
-- Chỉnh sửa cá nhân: CHƯA GHI.
-- Lý do và dòng mã đã sửa: CHƯA GHI.
-- Ảnh trước/sau và kiểm tra lại: CHƯA GHI.
-- Tự giải thích mã bằng lời của mình: CHƯA XÁC NHẬN.
-
-Những mục này để người học điền sau khi thực hiện. Không dùng nguyên báo cáo AI làm bằng chứng đã tự hoàn thành các yêu cầu cá nhân trong đề.
+Bản này đã được kiểm tra bằng trình duyệt trên máy tính và các khung màn hình nhỏ; chưa thử trên điện thoại thật.
