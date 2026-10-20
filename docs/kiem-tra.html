@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Biên bản kiểm tra giao diện Mộc</title>
+<link rel="stylesheet" href="report.css">
+</head>
+<body>
+<main>
+<a href="../index.html">← Giao diện Mộc</a>
+<h1>Biên bản kiểm tra</h1>
+<p>Ngày 20/10/2026 · Thực hiện bởi trợ lý AI trong trình duyệt. Không thay thế phần sinh viên tự chạy, sửa và giải thích.</p>
+<h2>1. Render và responsive</h2>
+<p>Dùng khung iframe có chiều rộng xác định để kích hoạt CSS media query, đo DOM trong trình duyệt và xem ảnh render. Đây là kiểm tra khung nhìn, chưa phải thử trên điện thoại vật lý.</p>
+<div class="table-scroll">
+<table>
+<thead>
+<tr>
+<th>Khung đặt</th>
+<th>Rộng nội dung / scrollWidth</th>
+<th>Lưới</th>
+<th>Kết quả</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>320px</td>
+<td>305 / 305px; 15px được trình duyệt dùng cho thanh cuộn dọc của iframe</td>
+<td>1 cột</td>
+<td>Không tràn ngang; 4 tên đầy đủ; ảnh tải đủ; 4 nút cao 44px.</td>
+</tr>
+<tr>
+<td>390px</td>
+<td>390 / 390px</td>
+<td>2 cột</td>
+<td>Không tràn ngang; 4 tên đầy đủ; ảnh tải đủ; 4 nút cao 44px.</td>
+</tr>
+<tr>
+<td>768px</td>
+<td>768 / 768px</td>
+<td>4 cột</td>
+<td>Không tràn ngang; 4 tên đầy đủ; ảnh tải đủ; 4 nút cao 44px.</td>
+</tr>
+<tr>
+<td>1440px</td>
+<td>1440 / 1440px</td>
+<td>4 cột</td>
+<td>Không tràn ngang; 4 tên đầy đủ; ảnh tải đủ; 4 nút cao 44px.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2>2. Tương tác và nội dung</h2>
+<ul>
+<li>Đã mở/đóng chi tiết thẻ đầu tiên bằng chuột; trên bản 390px thấy mô tả và số trang 168.</li>
+<li>Đã thử Enter đóng và Space mở chi tiết trên bản desktop; trạng thái accessibility đổi collapsed/expanded.</li>
+<li>Liên kết điều hướng Tủ sách đưa đến đúng khu vực; liên kết báo cáo đã được kiểm tra đường dẫn.</li>
+<li>Bốn giá bán: 96.000đ, 126.000đ, 108.000đ, 85.000đ. Tỷ lệ giảm 20%, 10%, 20% khớp giá gốc; khoản tiết kiệm 24.000đ, 14.000đ, 27.000đ.</li>
+<li>CSS riêng, bốn SVG parse được, ảnh có alt; bản giao nộp không có JavaScript, thư viện hay backend.</li>
+</ul>
+<h2>3. Lỗi phát hiện và sửa bởi AI</h2>
+<p>Ảnh bìa ở phần giới thiệu có width CSS nhưng còn chiều cao HTML cố định 440px, khiến vùng ảnh và bóng đổ quá cao; khung hẹp 305px ghi nhận scrollWidth 318px. Thêm height:auto vào .hero-book. Đo lại thấy scrollWidth bằng 305px; quan sát lại bản desktop cho thấy bìa và bóng đổ nằm gọn trong phần giới thiệu.</p>
+<p>Đây là điều chỉnh của AI trong quá trình làm. Người học vẫn cần tự phát hiện và sửa ít nhất một điểm riêng để đáp ứng yêu cầu của đề.</p>
+<h2>4. Ảnh kiểm tra</h2>
+<figure>
+<img src="evidence/moc-desktop.png" alt="Bản giao diện Mộc desktop">
+<figcaption>Render thực tế ở khung trình duyệt rộng 1265px.</figcaption>
+</figure>
+<div class="evidence-grid">
+<figure>
+<img src="evidence/moc-mobile.png" alt="Hai thẻ sách ở khung 390px">
+<figcaption>Khung 390px, khu vực sản phẩm; ảnh cắt lấy vùng nội dung từ screenshot kiểm tra.</figcaption>
+</figure>
+<figure>
+<img src="evidence/moc-mobile-open.png" alt="Mở chi tiết một sách ở khung 390px">
+<figcaption>Chi tiết mở bằng thao tác thật; ảnh cắt lấy vùng nội dung.</figcaption>
+</figure>
+</div>
+<h2>5. Giới hạn còn lại</h2>
+<ul>
+<li>Chưa kiểm thử nhiều trình duyệt độc lập và điện thoại vật lý.</li>
+<li>Chưa thử nghiệm người dùng, đo khả năng đọc hoặc đo chuyển đổi.</li>
+<li>Không có chức năng mua hàng nên không kiểm thử giao dịch.</li>
+<li>Phần tự xác nhận và chỉnh sửa cá nhân của sinh viên còn để mở trong AI_USAGE.md.</li>
+</ul>
+</main>
+</body>
+</html>

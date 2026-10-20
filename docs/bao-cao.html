@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Báo cáo khảo sát &amp; cải tiến giao diện TMĐT — Mộc</title>
+<link rel="stylesheet" href="report.css">
+</head>
+<body>
+<main>
+<a class="back" href="../index.html">← Xem giao diện Mộc</a>
+<p class="eyebrow">PHÁT TRIỂN ỨNG DỤNG WEB / TMĐT · CHƯƠNG 1</p>
+<h1>Khảo sát Fahasa.<br>Cải tiến thẻ sản phẩm sách.</h1>
+<p class="lead">Báo cáo quan sát thực tế và bản mẫu HTML/CSS. Ngày khảo sát: 20/10/2026 (giờ Việt Nam).</p>
+<div class="notice">
+<strong>Minh bạch thực hiện:</strong> Trợ lý AI thực hiện khảo sát bằng trình duyệt, viết mã và tài liệu. Người học cần tự chạy, kiểm tra, sửa một điểm và giải thích mã trước khi nộp; tài liệu không nhận những việc đó là đã do sinh viên thực hiện.</div>
+<h2>1. Website và phạm vi</h2>
+<p>
+<a href="https://www.fahasa.com/">Fahasa.com</a> bán sách, văn phòng phẩm, đồ chơi và các nhóm hàng khác quan sát được trong menu. Nhóm khách hàng mục tiêu suy luận từ danh mục: người đọc sách, học sinh/sinh viên, phụ huynh và người mua dụng cụ học tập. Đây là phân tích từ sản phẩm, không phải dữ liệu khách hàng nội bộ.</p>
+<p>Chức năng khảo sát: khám phá sản phẩm, xem danh mục, xem chi tiết, tìm kiếm và quản lý giỏ hàng. Quan sát trong một phiên duyệt chưa đăng nhập, khung nhìn 863 × 842px. Không có giao dịch hay đặt hàng. Giá và số kết quả là ảnh chụp tại thời điểm khảo sát.</p>
+<h2>2. Bảng khảo sát năm khu vực</h2>
+<p>
+<strong>Đã quan sát</strong> là điều hiện trên website hoặc phản hồi của thao tác đã thử. <strong>Nhận xét/đề xuất</strong> là đánh giá thiết kế, cần kiểm chứng thêm nếu triển khai thực tế.</p>
+<div class="table-scroll">
+<table>
+<thead>
+<tr>
+<th>Khu vực</th>
+<th>Chức năng / quan sát thực tế</th>
+<th>Điểm hợp lý</th>
+<th>Điểm có thể cải thiện / giới hạn</th>
+<th>Đề xuất và lý do</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">Trang chủ<a href="https://www.fahasa.com/">Mở nguồn ↗</a>
+</th>
+<td>Có banner khuyến mại, lối vào nhóm hàng, Flash Sale và các khối sách nổi bật. Trong phiên khảo sát xuất hiện hộp khuyến mại che phần nội dung, phải đóng để tiếp tục.</td>
+<td>Nhóm hàng và chương trình nổi bật giúp người mua khám phá nhanh.</td>
+<td>Hộp khuyến mại tạo thêm một bước trước khi đọc nội dung chính.</td>
+<td>Đề xuất: giới hạn lớp phủ lúc vào trang, ưu tiên một khối thông điệp gọn và lối vào tủ sách. Chưa đo tác động đến chuyển đổi.<a href="evidence/01-trang-chu.png">Ảnh bằng chứng ↗</a>
+</td>
+</tr>
+<tr>
+<th scope="row">Danh mục sản phẩm<a href="https://www.fahasa.com/sach-trong-nuoc.html">Mở nguồn ↗</a>
+</th>
+<td>Có danh sách dạng lưới, lựa chọn Giá Bán, 24 sản phẩm và Bộ lọc. Một số tên dài kết thúc bằng dấu ba chấm; trong ảnh chụp không thấy nút thao tác riêng trên thẻ.</td>
+<td>Giá bán đậm, giá gốc gạch ngang và nhãn giảm giá dễ phân biệt.</td>
+<td>Tên dài bị rút gọn khiến người mua cần mở sản phẩm để biết trọn tên. Chưa thử chức năng lọc và sắp xếp nên không kết luận độ chính xác của chúng.</td>
+<td>Đề xuất được triển khai: cho tên sách xuống dòng đầy đủ, dùng lưới thích ứng, có thao tác Xem chi tiết ngay trong từng thẻ.<a href="evidence/02-danh-muc.png">Ảnh bằng chứng ↗</a>
+</td>
+</tr>
+<tr>
+<th scope="row">Chi tiết sản phẩm<a href="https://www.fahasa.com/bang-chu-cai-va-so.html">Mở nguồn ↗</a>
+</th>
+<td>Sản phẩm Bảng Chữ Cái Và Số có ảnh, giá bán 4.000đ, giá gốc 5.000đ, giảm 20%; có thông tin tác giả, NXB, số trang, mô tả, ô số lượng, Thêm vào giỏ hàng và Mua ngay.</td>
+<td>Thông tin chi tiết và thao tác mua có trên cùng trang.</td>
+<td>Trang có nhiều khối ưu đãi và thông tin bổ sung. Đây là nhận xét về mật độ thông tin; chưa có thử nghiệm người dùng để kết luận gây khó mua.</td>
+<td>Đề xuất: phân cấp giá và nội dung chính, cho mở rộng mô tả khi cần. Bản mẫu dùng details/summary để minh họa.<a href="evidence/03-chi-tiet.png">Ảnh bằng chứng ↗</a>
+</td>
+</tr>
+<tr>
+<th scope="row">Tìm kiếm<a href="https://www.fahasa.com/searchengine?q=k%E1%BB%B9%20n%C4%83ng%20s%E1%BB%91ng">Mở nguồn ↗</a>
+</th>
+<td>Đã nhập “kỹ năng sống” từ ô tìm kiếm và nhấn Enter; trang trả về tiêu đề 8.946 kết quả, có Độ liên quan và Còn hàng. Kết quả nhìn thấy gồm sách học sinh, trẻ em và một số mục series.</td>
+<td>Hiển thị lại từ khóa và số lượng kết quả giúp xác nhận truy vấn.</td>
+<td>Từ khóa rộng trả về nhiều nhóm tuổi; người tìm sách cho bản thân cần thu hẹp. Đây không phải bằng chứng thuật toán tìm kiếm bị lỗi.</td>
+<td>Đề xuất: gợi ý thu hẹp theo độ tuổi hoặc mục đích đọc. Chức năng này chưa được triển khai trong bản mẫu thẻ sản phẩm.<a href="evidence/05-tim-kiem.png">Ảnh bằng chứng ↗</a>
+</td>
+</tr>
+<tr>
+<th scope="row">Giỏ hàng<a href="https://www.fahasa.com/checkout/cart/">Mở nguồn ↗</a>
+</th>
+<td>Đã xem giỏ rỗng và giỏ có 1 Bảng Chữ Cái Và Số. Giỏ hiển thị giá 4.000đ/5.000đ, ô số lượng 1, checkbox chọn sản phẩm và nút xóa. Khi chưa chọn sản phẩm, tổng 0đ; sau khi chọn, tổng 4.000đ.</td>
+<td>Có thể lựa chọn sản phẩm để tính tổng; trạng thái rỗng có lối Mua sắm ngay.</td>
+<td>Tổng 0đ khi có sản phẩm nhưng chưa chọn có thể khiến người mới cần tìm hiểu. Hành vi này đúng với trạng thái checkbox quan sát được, không được ghi là lỗi tính tiền.</td>
+<td>Đề xuất: thêm lời nhắc “Chọn sản phẩm để tính tổng”. Chưa thử sửa số lượng, xóa hoặc thanh toán; chưa xác minh phí vận chuyển cuối cùng.<a href="evidence/06-gio-hang-co-san-pham.png">Ảnh bằng chứng ↗</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2>3. Vấn đề và phương án được chọn</h2>
+<p>
+<strong>Vấn đề cụ thể:</strong> Trong ảnh danh mục, một số tên dài bị rút gọn; từng thẻ chưa có nút thao tác riêng hiển thị. Giá bán, giá gốc và nhãn giảm giá đã khá rõ nên được giữ lại về nguyên tắc tổ chức thông tin.</p>
+<p>
+<strong>Mục tiêu:</strong> Người xem đọc trọn tên, so sánh giá và mở thông tin sách ngay trên thẻ. Phạm vi một trang tủ sách mẫu, tối thiểu bốn sản phẩm. Không xây hệ thống bán hàng hoặc đưa ra tuyên bố tăng doanh thu.</p>
+<ul>
+<li>Bố cục: đầu trang gọn → giới thiệu → lưới 4 sách → gợi ý chọn sách → thông tin dự án.</li>
+<li>Thẻ: bìa tự tạo, tác giả, tên đầy đủ, giá bán, giá gốc nếu giảm, mức tiết kiệm và nút mở chi tiết.</li>
+<li>Responsive: 4 cột khi trên 700px; 2 cột khi 351–700px; 1 cột khi từ 350px trở xuống. Không dùng cắt dòng tên sách.</li>
+<li>HTML ngữ nghĩa: header, nav, main, section, article, h1–h3, details/summary, del, img alt.</li>
+<li>CSS: màu dùng biến, Grid cho sản phẩm, Flex cho điều hướng/giá, media query cho màn hình nhỏ, focus-visible cho bàn phím.</li>
+</ul>
+<h2>4. Dữ liệu và quyền sử dụng</h2>
+<p>Tên sách, tên tác giả, mô tả, số trang và giá trong Mộc là dữ liệu hư cấu dùng minh họa giao diện; không lấy làm dữ liệu kinh doanh của Fahasa. Bốn bìa SVG được tạo riêng bằng hình học và chữ, không sao chép bìa sách. Ảnh Fahasa trong phần bằng chứng dùng để minh họa khảo sát, không dùng làm ảnh sản phẩm hoặc quảng cáo.</p>
+<h2>5. Kiểm tra và giới hạn</h2>
+<p>Xem <a href="kiem-tra.html">biên bản kiểm tra</a> để biết các kích thước đã kiểm tra và kết quả thực tế. Xem README và AI_USAGE trong repository để biết cách chạy, vai trò AI và phần người học phải tự xác nhận.</p>
+<p>Không triển khai tìm kiếm, lọc, giỏ hàng hoặc thanh toán trong Mộc. “Xem chi tiết” có thể mở/đóng bằng HTML thuần; không có nút giả nhận đặt hàng. Chưa có đo lường khả năng sử dụng với người dùng thật hoặc kiểm tra trên thiết bị điện thoại vật lý.</p>
+<h2>6. Ảnh bằng chứng</h2>
+<div class="evidence-grid">
+<figure>
+<img src="evidence/01-trang-chu.png" alt="Ảnh khảo sát Trang chủ" loading="lazy">
+<figcaption>Trang chủ · 20/10/2026 · khung trình duyệt 863 × 842px</figcaption>
+</figure>
+<figure>
+<img src="evidence/02-danh-muc.png" alt="Ảnh khảo sát Danh mục sản phẩm" loading="lazy">
+<figcaption>Danh mục sản phẩm · 20/10/2026 · khung trình duyệt 863 × 842px</figcaption>
+</figure>
+<figure>
+<img src="evidence/03-chi-tiet.png" alt="Ảnh khảo sát Chi tiết sản phẩm" loading="lazy">
+<figcaption>Chi tiết sản phẩm · 20/10/2026 · khung trình duyệt 863 × 842px</figcaption>
+</figure>
+<figure>
+<img src="evidence/05-tim-kiem.png" alt="Ảnh khảo sát Tìm kiếm" loading="lazy">
+<figcaption>Tìm kiếm · 20/10/2026 · khung trình duyệt 863 × 842px</figcaption>
+</figure>
+<figure>
+<img src="evidence/06-gio-hang-co-san-pham.png" alt="Ảnh khảo sát Giỏ hàng" loading="lazy">
+<figcaption>Giỏ hàng · 20/10/2026 · khung trình duyệt 863 × 842px</figcaption>
+</figure>
+</div>
+<h2>7. Phần người học hoàn tất trước khi nộp</h2>
+<ol>
+<li>Tự mở website tham khảo và kiểm tra lại nhận xét.</li>
+<li>Tự chạy Mộc trên máy tính và màn hình điện thoại; mở/đóng chi tiết bằng chuột và bàn phím.</li>
+<li>Phát hiện và chỉnh ít nhất một điểm theo đánh giá cá nhân. Ghi lý do, dòng mã thay đổi, ảnh trước/sau trong AI_USAGE.</li>
+<li>Giải thích được Grid, media query, đường dẫn tương đối, alt, del và details/summary.</li>
+<li>Kiểm tra repo Public và đường dẫn Pages trước khi nộp. Không ghi phần này hoàn tất nếu chưa thực hiện.</li>
+</ol>
+<h2>8. Tài liệu tham khảo</h2>
+<ul>
+<li>Đề bài PDF Chương 1 do người dùng cung cấp, 11 trang.</li>
+<li>Các URL Fahasa và ảnh bằng chứng ở bảng khảo sát.</li>
+<li>
+<a href="https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site">GitHub Docs — cấu hình GitHub Pages</a>.</li>
+</ul>
+<p class="end">Dự án học tập Mộc · Không liên kết hoặc đại diện cho Fahasa.</p>
+</main>
+</body>
+</html>
