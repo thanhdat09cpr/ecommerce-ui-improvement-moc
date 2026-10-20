@@ -58,4 +58,8 @@ Xem [biên bản kiểm tra](docs/kiem-tra.html). Tự kiểm tra lại trên th
 
 ## 10. GitHub và Pages
 
+- Repository Public: https://github.com/thanhdat09cpr/ecommerce-ui-improvement-moc
+- Website: https://thanhdat09cpr.github.io/ecommerce-ui-improvement-moc/
+- Báo cáo: https://thanhdat09cpr.github.io/ecommerce-ui-improvement-moc/docs/bao-cao.html
+
 Repository cần Public để giảng viên xem mã. Trang web và báo cáo có thể chạy bằng GitHub Pages. Xem [hướng dẫn xuất bản](docs/xuat-ban.html).
