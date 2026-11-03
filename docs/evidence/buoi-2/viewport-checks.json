@@ -1,0 +1,30 @@
+[
+  {
+    "cards": 4,
+    "columns": "282px 282px 282px 282px",
+    "images": true,
+    "overflow": false,
+    "width": 1366
+  },
+  {
+    "cards": 4,
+    "columns": "342.5px 342.5px",
+    "images": true,
+    "overflow": false,
+    "width": 768
+  },
+  {
+    "cards": 4,
+    "columns": "343px",
+    "images": true,
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "cards": 4,
+    "columns": "273px",
+    "images": true,
+    "overflow": false,
+    "width": 320
+  }
+]

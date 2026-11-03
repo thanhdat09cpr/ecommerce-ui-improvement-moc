@@ -40,7 +40,8 @@ a:hover{text-decoration:underline;text-underline-offset:5px}
 .item-count{font-size:11px;color:var(--muted);white-space:nowrap}
 .collection-intro{font-size:12px;color:var(--muted);margin-top:10px}
 .product-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;margin-top:26px;align-items:start}
-.product{min-width:0}
+.product{min-width:0;border:1px solid var(--line);border-radius:12px;background:#fff}
+.product .cover-stage{border-radius:11px 11px 0 0}
 .cover-stage{height:260px;position:relative;display:flex;align-items:center;justify-content:center;background:#edf0e6;overflow:hidden}
 .stage-2{background:#f0e5da}
 .stage-3{background:#e1e9e7}
@@ -50,7 +51,7 @@ a:hover{text-decoration:underline;text-underline-offset:5px}
 .discount,.edition{position:absolute;top:12px;left:12px;font-size:10px;padding:3px 7px;z-index:1;background:var(--paper);color:var(--ink)}
 .discount{background:var(--ink);color:white}
 .edition{font-size:9px}
-.product-body{padding:15px 0 0}
+.product-body{padding:16px}
 .author{font-size:10px;color:var(--muted);letter-spacing:.09em;text-transform:uppercase}
 .product h3{font-size:14px;font-weight:600;line-height:1.55;margin-top:6px;min-height:66px;overflow-wrap:anywhere}
 .pricing{display:flex;flex-wrap:wrap;align-items:baseline;column-gap:9px;row-gap:1px;min-height:61px;padding-top:8px}
@@ -58,7 +59,7 @@ a:hover{text-decoration:underline;text-underline-offset:5px}
 .pricing del{font-size:11px;color:var(--muted)}
 .saving,.regular-price{display:block;flex-basis:100%;font-size:10px;color:var(--muted)}
 .product details{margin-top:12px}
-summary{list-style:none;display:flex;justify-content:space-between;gap:8px;align-items:center;min-height:44px;border:1px solid #aebbb0;padding:9px 12px;font-size:11px;font-weight:600;cursor:pointer}
+summary{list-style:none;display:flex;justify-content:space-between;gap:8px;align-items:center;min-height:44px;border:1px solid #aebbb0;padding:9px 12px;font-size:11px;font-weight:600;cursor:pointer;border-radius:6px;transition:background-color .2s,color .2s,border-color .2s}
 summary::-webkit-details-marker{display:none}
 summary:hover,details[open]>summary{background:var(--ink);color:white;border-color:var(--ink)}
 .label-open{display:none}
@@ -93,10 +94,10 @@ details[open]>summary .detail-icon{transform:rotate(180deg)}
 .front-book{left:15%}
 .back-book{left:45%}
 .art-caption{right:0}
-.product-grid{gap:16px}
+.product-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
 .cover-stage{height:220px}
 .cover-stage img{width:115px;height:169px}
-.product h3{min-height:88px}
+.product h3{min-height:48px}
 .pricing{column-gap:5px}
 .pricing strong{font-size:16px}
 .section-heading h2{font-size:27px}
@@ -131,7 +132,9 @@ details[open]>summary .detail-icon{transform:rotate(180deg)}
 .site-footer>a:last-child{margin-left:auto}
 }
 
-@media(max-width:420px){.wrap{width:calc(100% - 32px)}
+@media(max-width:420px){.product-grid{grid-template-columns:1fr}
+.product h3{min-height:0}
+.wrap{width:calc(100% - 32px)}
 .announcement{font-size:9px;letter-spacing:.03em;padding-inline:8px}
 .announcement span{padding:0 5px}
 .hero h1{font-size:44px}
@@ -144,7 +147,7 @@ details[open]>summary .detail-icon{transform:rotate(180deg)}
 .cover-stage img{width:103px;height:151px}
 .discount,.edition{top:8px;left:7px;font-size:9px}
 .edition{font-size:8px}
-.product h3{font-size:13px;min-height:81px}
+.product h3{font-size:15px;min-height:0}
 .pricing strong{font-size:16px}
 .pricing del{font-size:10px}
 summary{padding:9px;font-size:10px}
@@ -167,5 +170,5 @@ summary{padding:9px;font-size:10px}
 }
 
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}
-.cover-stage img{transition:none}
+.cover-stage img,summary{transition:none}
 }

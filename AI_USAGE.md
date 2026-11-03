@@ -38,3 +38,27 @@ Các thay đổi và kiểm tra trên được thực hiện với sự hỗ tr�
 - `details[open]`: chọn phần chi tiết đang mở để đổi nhãn nút.
 
 Bản này đã được kiểm tra bằng trình duyệt trên máy tính và các khung màn hình nhỏ; chưa thử trên điện thoại thật.
+
+
+## Buổi 2 — 03/11/2026
+
+### Yêu cầu thực tế
+
+- Người dùng gửi PDF BaiTap_CaNhan_Buoi2 và yêu cầu đọc, làm theo đề bài.
+- Khi cần bài Buổi 1, người dùng trả lời: “em dò cái git của anh nha trước cũng là em làm đó”.
+
+Codex đọc đủ tài liệu 23 trang, tìm bản Mộc trong workspace cũ và xác minh origin GitHub. Bản remote bắt đầu ở commit `5a2ac17`, cùng bản Buổi 1. Các prompt đánh số trong PDF là mẫu của giảng viên, không ghi nhận giả rằng sinh viên đã lần lượt gửi từng prompt đó.
+
+### Nội dung hỗ trợ và kiểm tra
+
+- Rà soát HTML ngữ nghĩa, CSS ngoài, ảnh và các thao tác hiện có; giữ những phần đã đúng.
+- Đo bản cũ ở 768 px: bốn cột, mỗi thẻ 168 px, border và padding của article bằng 0.
+- Sửa Box Model, breakpoint và transition; thêm tên truy cập cho article.
+- Kiểm tra ảnh sau khi đổi thành hai cột: min-height 88 px của tên sách tạo khoảng trắng thừa; giảm còn 48 px ở breakpoint 1000 px và kiểm tra lại.
+- Chụp trước–sau, kiểm tra 1366/768/390/320 px, focus và Enter; soạn báo cáo và giải thích bảy câu kiến thức theo mã.
+
+### Phần tự điều chỉnh
+
+Các điều chỉnh mã và kiểm tra nêu trên do Codex thực hiện với AI hỗ trợ. Chưa có bằng chứng sinh viên tự sửa độc lập hay đã trả lời trực tiếp câu hỏi của giảng viên. Báo cáo cung cấp bài thực hành padding 16 → 20 px để sinh viên tự làm, chụp ảnh và ghi kết quả trước khi cập nhật trạng thái. Không ghi phần này là đã hoàn thành.
+
+Ảnh và số đo ở `docs/evidence/buoi-2/`; báo cáo ở `docs/buoi-2.html`. Kiểm tra viewport là trên trình duyệt desktop, chưa thử điện thoại thật.

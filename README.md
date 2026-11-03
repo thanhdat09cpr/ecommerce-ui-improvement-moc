@@ -39,3 +39,21 @@ Codex hỗ trợ khảo sát, viết HTML/CSS, làm ảnh bìa, kiểm tra giao 
 - [Website](https://thanhdat09cpr.github.io/ecommerce-ui-improvement-moc/)
 - [Báo cáo khảo sát](https://thanhdat09cpr.github.io/ecommerce-ui-improvement-moc/docs/bao-cao.html)
 - [GitHub](https://github.com/thanhdat09cpr/ecommerce-ui-improvement-moc)
+
+
+## Buổi 2 — HTML5 và CSS3 (03/11/2026)
+
+Tiếp tục bản Buổi 1 tại commit `5a2ac17`, tập trung danh sách bốn cuốn sách; giữ nguyên nội dung và ảnh. Không thêm framework hoặc JavaScript.
+
+- Thẻ sách có border, bo góc và padding 16 px cho nội dung.
+- Bố cục: 4 cột ở màn hình lớn, 2 cột từ 1000 px trở xuống, 1 cột từ 420 px trở xuống.
+- Nút chi tiết có chuyển màu 0,2 giây; giữ focus-visible và hỗ trợ giảm chuyển động.
+- Article được đặt tên qua aria-labelledby trỏ đến h3.
+- Đã kiểm tra local ở 1366, 768, 390 và 320 px: ảnh tải đủ, không tràn ngang; kiểm tra mở chi tiết bằng bàn phím.
+
+[Báo cáo Buổi 2, ảnh trước–sau và bảy câu hỏi kiến thức](docs/buoi-2.html).
+[Nhật ký AI](AI_USAGE.md).
+
+Chạy như Buổi 1: mở index.html hoặc chạy `python3 -m http.server 8000` tại thư mục dự án rồi vào http://localhost:8000. Báo cáo ở docs/buoi-2.html.
+
+**Phần còn cần sinh viên thực hiện:** tự sửa một thay đổi nhỏ, chụp ảnh và giải thích theo hướng dẫn cuối báo cáo. Thao tác Codex đã làm không được ghi thành thao tác tự làm độc lập của sinh viên. Các câu trả lời kiến thức là bản giải thích để học và thực hành.
