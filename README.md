@@ -45,7 +45,7 @@ Codex hỗ trợ khảo sát, viết HTML/CSS, làm ảnh bìa, kiểm tra giao 
 
 Tiếp tục bản Buổi 1 tại commit `5a2ac17`, tập trung danh sách bốn cuốn sách; giữ nguyên nội dung và ảnh. Không thêm framework hoặc JavaScript.
 
-- Thẻ sách có border, bo góc và padding 16 px cho nội dung.
+- Thẻ sách có border, bo góc và padding 20 px cho nội dung.
 - Bố cục: 4 cột ở màn hình lớn, 2 cột từ 1000 px trở xuống, 1 cột từ 420 px trở xuống.
 - Nút chi tiết có chuyển màu 0,2 giây; giữ focus-visible và hỗ trợ giảm chuyển động.
 - Article được đặt tên qua aria-labelledby trỏ đến h3.
@@ -57,3 +57,8 @@ Tiếp tục bản Buổi 1 tại commit `5a2ac17`, tập trung danh sách bốn
 Chạy như Buổi 1: mở index.html hoặc chạy `python3 -m http.server 8000` tại thư mục dự án rồi vào http://localhost:8000. Báo cáo ở docs/buoi-2.html.
 
 **Phần còn cần sinh viên thực hiện:** tự sửa một thay đổi nhỏ, chụp ảnh và giải thích theo hướng dẫn cuối báo cáo. Thao tác Codex đã làm không được ghi thành thao tác tự làm độc lập của sinh viên. Các câu trả lời kiến thức là bản giải thích để học và thực hành.
+
+
+### Điều chỉnh bổ sung
+
+Theo yêu cầu làm tiếp, Codex đã đổi padding nội dung thẻ từ 16 lên 20 px, chụp ảnh trước–sau và kiểm tra lại bốn kích thước màn hình. Không tràn ngang, ảnh tải đủ, Enter mở được chi tiết. Xem mục 6 của báo cáo. Đây là thay đổi có AI hỗ trợ; không ghi nhận là thao tác độc lập của sinh viên.

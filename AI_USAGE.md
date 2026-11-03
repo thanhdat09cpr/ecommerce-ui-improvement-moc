@@ -59,6 +59,11 @@ Codex đọc đủ tài liệu 23 trang, tìm bản Mộc trong workspace cũ v�
 
 ### Phần tự điều chỉnh
 
-Các điều chỉnh mã và kiểm tra nêu trên do Codex thực hiện với AI hỗ trợ. Chưa có bằng chứng sinh viên tự sửa độc lập hay đã trả lời trực tiếp câu hỏi của giảng viên. Báo cáo cung cấp bài thực hành padding 16 → 20 px để sinh viên tự làm, chụp ảnh và ghi kết quả trước khi cập nhật trạng thái. Không ghi phần này là đã hoàn thành.
+Các điều chỉnh mã và kiểm tra nêu trên do Codex thực hiện với AI hỗ trợ. Chưa có bằng chứng sinh viên tự sửa độc lập hay đã trả lời trực tiếp câu hỏi của giảng viên. Ở lượt tiếp theo, người dùng yêu cầu làm giúp luôn. Codex đã thực hiện padding 16 → 20 px, chụp ảnh trước–sau và kiểm tra lại. Phần chỉnh mã đã xong với AI hỗ trợ; yêu cầu sinh viên tự sửa độc lập vẫn chưa được xác nhận.
 
 Ảnh và số đo ở `docs/evidence/buoi-2/`; báo cáo ở `docs/buoi-2.html`. Kiểm tra viewport là trên trình duyệt desktop, chưa thử điện thoại thật.
+
+
+### Kiểm tra sau khi đổi padding
+
+Computed style xác nhận 20 px ở các viewport 1366, 768, 390, 320 px. Tất cả ảnh tải được, không tràn ngang cấp trang; kiểm tra Enter mở details. Ảnh padding-truoc.png và padding-sau.png cùng kết quả padding-checks.json nằm trong docs/evidence/buoi-2/. Các ảnh hoàn thiện sau-* đã được chụp lại với padding mới.

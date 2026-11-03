@@ -1,0 +1,26 @@
+[
+  {
+    "images": true,
+    "overflow": false,
+    "padding": "20px",
+    "width": 1366
+  },
+  {
+    "images": true,
+    "overflow": false,
+    "padding": "20px",
+    "width": 768
+  },
+  {
+    "images": true,
+    "overflow": false,
+    "padding": "20px",
+    "width": 390
+  },
+  {
+    "images": true,
+    "overflow": false,
+    "padding": "20px",
+    "width": 320
+  }
+]
