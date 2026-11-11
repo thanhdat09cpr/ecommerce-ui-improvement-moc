@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font:
+    22px Arial,
+    sans-serif;
+  padding: 18px;
+}
+#wrapper {
+  width: min(480px, 100%);
+  margin: auto;
+  padding: 8px;
+  border: 3px solid #222;
+  box-shadow: -20px 18px 13px #aaa;
+  display: grid;
+  grid-template-columns: 18% 1fr;
+  gap: 6px;
+}
+header,
+nav,
+main,
+footer {
+  padding: 6px;
+  border: 3px solid #333;
+}
+header,
+footer {
+  grid-column: 1 / -1;
+}
+header {
+  min-height: 60px;
+}
+main,
+nav {
+  min-height: 310px;
+}

@@ -1,0 +1,16 @@
+ul {
+  margin: 20px 0;
+  padding: 0;
+  list-style: none;
+}
+li {
+  display: inline-block;
+  width: 105px;
+  max-width: 22%;
+  text-align: center;
+  background: aqua;
+}
+a {
+  display: block;
+  font-size: 24px;
+}

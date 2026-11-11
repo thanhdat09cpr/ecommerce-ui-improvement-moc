@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+#root {
+  width: min(960px, 100%);
+  margin: auto;
+  padding: 20px;
+  font-size: 16px;
+  background: #ccc;
+}
+.header {
+  font-size: 30px;
+  text-align: center;
+}
+#root > .description {
+  margin: 20px;
+  padding: 20px 5%;
+  background: #888;
+  border: 2px solid white;
+  border-radius: 12px;
+}
+.remark {
+  margin: 42px 0 16px;
+  text-align: center;
+}
+.heroes-list {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.hero-item {
+  display: inline-block;
+  position: relative;
+  width: 24%;
+  vertical-align: top;
+  padding-bottom: 140px;
+}
+.hero-item h2 {
+  font-size: 19px;
+  text-align: center;
+}
+.hero-item .description {
+  position: relative;
+  z-index: 1;
+  margin: 0 6px 0 auto;
+  padding: 15px;
+  min-height: 160px;
+  background: rgb(100 100 100 / 78%);
+  border: 1px solid white;
+  border-radius: 6px;
+  text-align: justify;
+}
+.hero-item img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 92%;
+  height: 200px;
+  object-fit: cover;
+  border: 1px solid white;
+  border-radius: 20px;
+}
+@media (max-width: 780px) {
+  .hero-item {
+    width: 48%;
+  }
+}
+@media (max-width: 480px) {
+  .hero-item {
+    width: 100%;
+    max-width: 290px;
+  }
+}

@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CSS Diner và CSS Speedrun · Tuần 3</title>
+
+    <link rel="stylesheet" href="css/BaiTap1.css" />
+  </head>
+  <body>
+    <a href="index.html">← Tuần 3</a>
+    <h1>CSS Selectors</h1>
+    <p>
+      Các màn được giải và chụp bằng trình duyệt với sự hỗ trợ của Codex. Chọn
+      ảnh để xem selector và đề từng màn.
+    </p>
+    <section>
+      <h2><a href="https://flukeout.github.io/">CSS Diner</a></h2>
+      <figure>
+        <a href="minh-chung/diner-hoan-thanh.png"
+          ><img
+            loading="lazy"
+            src="minh-chung/diner-hoan-thanh.png"
+            alt="Kết quả hoàn thành CSS Diner"
+        /></a>
+        <figcaption>Kết quả hoàn thành CSS Diner</figcaption>
+      </figure>
+      <div class="gallery">
+        <figure>
+          <a href="minh-chung/diner-1.png"
+            ><img
+              loading="lazy"
+              src="minh-chung/diner-1.png"
+              alt="Level 1 · plate"
+          /></a>
+          <figcaption>Level 1 · plate</figcaption>
+        </figure>
+        <figure>
+          <a href="minh-chung/diner-2.png"
+            ><img
+              loading="lazy"
+              src="minh-chung/diner-2.png"
+              alt="Level 2 · bento"
+          /></a>
+          <figcaption>Level 2 · bento</figcaption>
+        </figure>
+        <figure>
+          <a href="minh-chung/diner-3.png"
+            ><img
+              loading="lazy"
+              src="minh-chung/diner-3.png"
+              alt="Level 3 · #fancy"
+          /></a>
+          <figcaption>Level 3 · #fancy</figcaption>
+        </figure>
+        <figure>
+          <a href="minh-chung/diner-4.png"
+            ><img
+              loading="lazy"
+              src="minh-chung/diner-4.png"
+              alt="Level 4 · plate apple"
+          /></a>
+          <figcaption>Level 4 · plate apple</figcaption>
+        </figure>
+        <figure>
+          <a href="minh-chung/diner-5.png"
+            ><img
+              loading="lazy"
+              src="minh-chung/diner-5.png"
+              alt="Level 5 · #fancy pickle"
+          /></a>
+          <figcaption>Level 5 · #fancy pickle</figcaption>
+        </figure>
+        <figure>
+          <a href="minh-chung/diner-6.png"
+            ><img
+              loading="lazy"
+              src="minh-chung/diner-6.png"
+              alt="Level 6 · .small"
+          /></a>
+          <figcaption>Level 6 · .small</figcaption>
+        </figure>
+        <figure>
+          <a href="minh-chung/diner-7.png"
+            ><img
+              loading="lazy"
+              src="minh-chung/diner-7.png"
+              alt="Level 7 · orange.small"
+          /></a>
+          <figcaption>Level 7 · orange.small</figcaption>
+        </figure>
+        <figure>
+          <a href="minh-chung/diner-8.png"
+            ><img
+              loading="lazy"
+              src="minh-chung/diner-8.png"
+              alt="Level 8 · bento orange.small"
+          /></a>
+          <figcaption>Level 8 · bento orange.small</figcaption>
+        </figure>
+        <figure>
+          <a href="minh-chung/diner-9.png"
+            ><img
+              loading="lazy"
+              src="minh-chung/diner-9.png"
+              alt="Level 9 · plate, bento"
+          /></a>
+          <figcaption>Level 9 · plate, bento</figcaption>
+        </figure>
+        <figure>
+          <a href="minh-chung/diner-10.png"
+            ><img
+              loading="lazy"
+              src="minh-chung/diner-10.png"
+              alt="Level 10 · *"
+          /></a>
+          <figcaption>Level 10 · *</figcaption>
+        </figure>
+        <figure>
+          <a href="minh-chung/diner-11.png"
+            ><img
+              loading="lazy"
+              src="minh-chung/diner-11.png"
+              alt="Level 11 · plate *"
+          /></a>
+          <figcaption>Level 11 · plate *</figcaption>
+        </figure>
+        <figure>
+          <a href="minh-chung/diner-12.png"
+            ><img
+              loading="lazy"
+              src="minh-chung/diner-12.png"
+              alt="Level 12 · plate + apple"
+          /></a>
+          <figcaption>Level 12 · plate + apple</figcaption>
+        </figure>
+        <figure>
+          <a href="minh-chung/diner-13.png"
+            ><img
+              loading="lazy"
+              src="minh-chung/diner-13.png"
+              alt="Level 13 · bento ~ pickle"
+          /></a>
+          <figcaption>Level 13 · bento ~ pickle</figcaption>
+        </figure>
+        <figure>
+          <a href="minh-chung/diner-14.png"
+            ><img
+              loading="lazy"
+              src="minh-chung/diner-14.png"
+              alt="Level 14 · plate &gt; apple"
+          /></a>
+          <figcaption>Level 14 · plate &gt; apple</figcaption>
+        </figure>
+        <figure>
+          <a href="minh-chung/diner-15.png"
+            ><img
+              loading="lazy"
+              src="minh-chung/diner-15.png"
+              alt="Level 15 · orange:first-child"
+          /></a>
+          <figcaption>Level 15 · orange:first-child</figcaption>
+        </figure>
+        <figure>
+          <a href="minh-chung/diner-16.png"
+            ><img
+              loading="lazy"
+              src="minh-chung/diner-16.png"
+              alt="Level 16 · plate :only-child"
+          /></a>
+          <figcaption>Level 16 · plate :only-child</figcaption>
+        </figure>
+        <figure>
+          <a href="minh-chung/diner-17.png"
+            ><img
+              loading="lazy"
+              src="minh-chung/diner-17.png"
+              alt="Level 17 · .small:last-child"
+          /></a>
+          <figcaption>Level 17 · .small:last-child</figcaption>
+        </figure>
+        <figure>
+          <a href="minh-chung/diner-18.png"
+            ><img
+              loading="lazy"
+              src="minh-chung/diner-18.png"
+              alt="Level 18 · plate:nth-child(3)"
+          /></a>
+          <figcaption>Level 18 · plate:nth-child(3)</figcaption>
+        </figure>
+        <figure>
+          <a href="minh-chung/diner-19.png"
+            ><img
+              loading="lazy"
+              src="minh-chung/diner-19.png"
+              alt="Level 19 · bento:nth-last-child(3)"
+          /></a>
+          <figcaption>Level 19 · bento:nth-last-child(3)</figcaption>
+        </figure>
+        <figure>
+          <a href="minh-chung/diner-20.png"
+            ><img
+              loading="lazy"
+              src="minh-chung/diner-20.png"
+              alt="Level 20 · apple:first-of-type"
+          /></a>
+          <figcaption>Level 20 · apple:first-of-type</figcaption>
+        </figure>
+        <figure>
+          <a href="minh-chung/diner-21.png"
+            ><img
+              loading="lazy"
+              src="minh-chung/diner-21.png"
+              alt="Level 21 · plate:nth-of-type(even)"
+          /></a>
+          <figcaption>Level 21 · plate:nth-of-type(even)</figcaption>
+        </figure>
+        <figure>
+          <a href="minh-chung/diner-22.png"
+            ><img
+              loading="lazy"
+              src="minh-chung/diner-22.png"
+              alt="Level 22 · plate:nth-of-type(2n+3)"
+          /></a>
+          <figcaption>Level 22 · plate:nth-of-type(2n+3)</figcaption>
+        </figure>
+        <figure>
+          <a href="minh-chung/diner-23.png"
+            ><img
+              loading="lazy"
+              src="minh-chung/diner-23.png"
+              alt="Level 23 · apple:only-of-type"
+          /></a>
+          <figcaption>Level 23 · apple:only-of-type</figcaption>
+        </figure>
+        <figure>
+          <a href="minh-chung/diner-24.png"
+            ><img
+              loading="lazy"
+              src="minh-chung/diner-24.png"
+              alt="Level 24 · orange:last-of-type, apple:last-of-type"
+          /></a>
+          <figcaption>
+            Level 24 · orange:last-of-type, apple:last-of-type
+          </figcaption>
+        </figure>
+        <figure>
+          <a href="minh-chung/diner-25.png"
+            ><img
+              loading="lazy"
+              src="minh-chung/diner-25.png"
+              alt="Level 25 · bento:empty"
+          /></a>
+          <figcaption>Level 25 · bento:empty</figcaption>
+        </figure>
+        <figure>
+          <a href="minh-chung/diner-26.png"
+            ><img
+              loading="lazy"
+              src="minh-chung/diner-26.png"
+              alt="Level 26 · apple:not(.small)"
+          /></a>
+          <figcaption>Level 26 · apple:not(.small)</figcaption>
+        </figure>
+        <figure>
+          <a href="minh-chung/diner-27.png"
+            ><img
+              loading="lazy"
+              src="minh-chung/diner-27.png"
+              alt="Level 27 · [for]"
+          /></a>
+          <figcaption>Level 27 · [for]</figcaption>
+        </figure>
+        <figure>
+          <a href="minh-chung/diner-28.png"
+            ><img
+              loading="lazy"
+              src="minh-chung/diner-28.png"
+              alt="Level 28 · plate[for]"
+          /></a>
+          <figcaption>Level 28 · plate[for]</figcaption>
+        </figure>
+        <figure>
+          <a href="minh-chung/diner-29.png"
+            ><img
+              loading="lazy"
+              src="minh-chung/diner-29.png"
+              alt='Level 29 · [for="Vitaly"]'
+          /></a>
+          <figcaption>Level 29 · [for=&quot;Vitaly&quot;]</figcaption>
+        </figure>
+        <figure>
+          <a href="minh-chung/diner-30.png"
+            ><img
+              loading="lazy"
+              src="minh-chung/diner-30.png"
+              alt='Level 30 · [for^="Sa"]'
+          /></a>
+          <figcaption>Level 30 · [for^=&quot;Sa&quot;]</figcaption>
+        </figure>
+        <figure>
+          <a href="minh-chung/diner-31.png"
+            ><img
+              loading="lazy"
+              src="minh-chung/diner-31.png"
+              alt='Level 31 · [for$="ato"]'
+          /></a>
+          <figcaption>Level 31 · [for$=&quot;ato&quot;]</figcaption>
+        </figure>
+        <figure>
+          <a href="minh-chung/diner-32.png"
+            ><img
+              loading="lazy"
+              src="minh-chung/diner-32.png"
+              alt='Level 32 · [for*="obb"]'
+          /></a>
+          <figcaption>Level 32 · [for*=&quot;obb&quot;]</figcaption>
+        </figure>
+      </div>
+    </section>
+    <section>
+      <h2><a href="https://css-speedrun.netlify.app/">CSS Speedrun</a></h2>
+      <figure>
+        <a href="minh-chung/speed-hoan-thanh.png"
+          ><img
+            loading="lazy"
+            src="minh-chung/speed-hoan-thanh.png"
+            alt="Kết quả hoàn thành CSS Speedrun"
+        /></a>
+        <figcaption>Kết quả hoàn thành CSS Speedrun</figcaption>
+      </figure>
+      <div class="gallery">
+        <figure>
+          <a href="minh-chung/speed-0.png"
+            ><img
+              loading="lazy"
+              src="minh-chung/speed-0.png"
+              alt="Intro · li:first-child"
+          /></a>
+          <figcaption>Intro · li:first-child</figcaption>
+        </figure>
+        <figure>
+          <a href="minh-chung/speed-1.png"
+            ><img
+              loading="lazy"
+              src="minh-chung/speed-1.png"
+              alt="Level 1 · p:not(.foo)"
+          /></a>
+          <figcaption>Level 1 · p:not(.foo)</figcaption>
+        </figure>
+        <figure>
+          <a href="minh-chung/speed-2.png"
+            ><img
+              loading="lazy"
+              src="minh-chung/speed-2.png"
+              alt="Level 2 · li:nth-child(2n+3)"
+          /></a>
+          <figcaption>Level 2 · li:nth-child(2n+3)</figcaption>
+        </figure>
+        <figure>
+          <a href="minh-chung/speed-3.png"
+            ><img
+              loading="lazy"
+              src="minh-chung/speed-3.png"
+              alt="Level 3 · div &gt; *"
+          /></a>
+          <figcaption>Level 3 · div &gt; *</figcaption>
+        </figure>
+        <figure>
+          <a href="minh-chung/speed-4.png"
+            ><img
+              loading="lazy"
+              src="minh-chung/speed-4.png"
+              alt="Level 4 · span[data-item]"
+          /></a>
+          <figcaption>Level 4 · span[data-item]</figcaption>
+        </figure>
+        <figure>
+          <a href="minh-chung/speed-5.png"
+            ><img
+              loading="lazy"
+              src="minh-chung/speed-5.png"
+              alt="Level 5 · p ~ span"
+          /></a>
+          <figcaption>Level 5 · p ~ span</figcaption>
+        </figure>
+        <figure>
+          <a href="minh-chung/speed-6.png"
+            ><img
+              loading="lazy"
+              src="minh-chung/speed-6.png"
+              alt="Level 6 · :enabled"
+          /></a>
+          <figcaption>Level 6 · :enabled</figcaption>
+        </figure>
+        <figure>
+          <a href="minh-chung/speed-7.png"
+            ><img
+              loading="lazy"
+              src="minh-chung/speed-7.png"
+              alt="Level 7 · li:nth-child(4n+1), li:nth-child(4n+2):not(:last-child)"
+          /></a>
+          <figcaption>
+            Level 7 · li:nth-child(4n+1), li:nth-child(4n+2):not(:last-child)
+          </figcaption>
+        </figure>
+        <figure>
+          <a href="minh-chung/speed-8.png"
+            ><img
+              loading="lazy"
+              src="minh-chung/speed-8.png"
+              alt="Level 8 · a + span"
+          /></a>
+          <figcaption>Level 8 · a + span</figcaption>
+        </figure>
+        <figure>
+          <a href="minh-chung/speed-9.png"
+            ><img
+              loading="lazy"
+              src="minh-chung/speed-9.png"
+              alt="Level 9 · #foo &gt; .foo"
+          /></a>
+          <figcaption>Level 9 · #foo &gt; .foo</figcaption>
+        </figure>
+        <figure>
+          <a href="minh-chung/speed-10.png"
+            ><img
+              loading="lazy"
+              src="minh-chung/speed-10.png"
+              alt="Level 10 · div div &gt; span + code:not(.foo)"
+          /></a>
+          <figcaption>Level 10 · div div &gt; span + code:not(.foo)</figcaption>
+        </figure>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 30px;
+  background: white url("../assets/bit.png") repeat fixed;
+  background-size: 30px auto;
+  font-family: Arial, sans-serif;
+}
+main {
+  max-width: 720px;
+  margin: auto;
+  padding: 20px;
+  background: white;
+}
+.ueh {
+  color: blue;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.khoa {
+  color: red;
+  text-align: right;
+  font:
+    italic 15px Arial,
+    sans-serif;
+  border: 3px dotted yellow;
+  border-radius: 10px;
+  background: gray;
+  opacity: 0.5;
+  padding: 8px;
+}
+.bit {
+  display: inline-block;
+  padding: 8px;
+  margin: 0;
+  font-size: 40px;
+  font-weight: bold;
+  color: #b8df29;
+  text-shadow:
+    3px 3px 2px #a00,
+    -3px -2px 4px #ff2a00,
+    4px 1px 12px #689000;
+}
+.excerpt {
+  width: 100px;
+  height: 50px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

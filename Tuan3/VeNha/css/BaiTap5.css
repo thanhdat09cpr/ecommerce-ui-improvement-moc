@@ -1,0 +1,39 @@
+body {
+  font:
+    16px/1.6 Arial,
+    sans-serif;
+  color: #333;
+}
+.best-shared {
+  margin: 30px auto;
+  text-align: center;
+}
+h2 {
+  font-size: clamp(32px, 5vw, 48px);
+  font-weight: 400;
+  margin: 0.35em 0;
+}
+strong {
+  color: #00aeef;
+}
+.btn-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+}
+.btn-list li {
+  display: inline-block;
+  margin: 5px 10px;
+}
+.btn-list a {
+  display: inline-block;
+  padding: 15px 36px;
+  border-radius: 4px;
+  color: white;
+  background: #2d3032;
+  text-decoration: none;
+}
+.btn-list a:hover,
+.btn-list a:focus-visible {
+  background: #14536a;
+}
