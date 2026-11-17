@@ -1,7 +1,6 @@
 # JavaScript Labs
 
 Nguyễn Thành Đạt – MSSV 31241026984  
-Lớp học phần: [Bổ sung mã lớp]
 
 ## Nội dung
 Bài làm tiếp tục repository cũ, sử dụng HTML, CSS và ảnh trong ba gói Lab do giảng viên cung cấp. Mã JavaScript hoàn thành các bước thực hành, giữ bản cuối khi tài liệu yêu cầu sửa cùng một đoạn mã nhiều lần.
@@ -55,4 +54,4 @@ GitHub Settings → Pages → Deploy from a branch → main → / (root) → Sav
 - Exercise 10.9 và 10.10 gọi trực tiếp dịch vụ HTTP gốc khi chạy bằng Live Server. Đã nhận được 53 thành phố. Trên GitHub Pages HTTPS, trình duyệt chặn HTTP nên GET dùng file cities.json lưu nguyên phản hồi từ dịch vụ gốc ngày 17/11/2026. Đây là bản lưu dữ liệu thật, không phải dữ liệu cập nhật trực tiếp trên Pages. Nguồn được ghi trên trang.
 - jQuery dùng CDN theo đề, có bản cục bộ dự phòng. Bootstrap và Font Awesome phục vụ giao diện mẫu, không thêm framework ứng dụng.
 
-AI hỗ trợ mã nguồn, kiểm thử và báo cáo. Sinh viên cần đọc lại, chạy thử, bổ sung mã lớp và sửa phần tự đánh giá theo trải nghiệm thực tế trước khi nộp.
+AI hỗ trợ mã nguồn, kiểm thử và báo cáo. Sinh viên cần đọc lại, chạy thử và sửa phần tự đánh giá theo trải nghiệm thực tế trước khi nộp.
