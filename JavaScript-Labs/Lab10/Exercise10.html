@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Exercise 10.10</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="js/jquery-3.1.1.min.js"></script>
+  </head>
+  <body>
+    <a href="index.html">Quay lại Lab 10</a>
+    <h1>Exercise 10.10 – jqXHR Handling</h1>
+    <p>
+      Dùng done khi thành công, fail khi lỗi và always để kết thúc trạng thái
+      đang tải.
+    </p>
+    <label
+      >Nguồn dữ liệu
+      <select id="source">
+        <option value="data/cities.json">Dữ liệu mẫu trong bài</option>
+        <option
+          value="https://www.randyconnolly.com/funwebdev/services/travel/cities.php"
+        >
+          Dịch vụ trong tài liệu
+        </option>
+        <option value="data/khong-ton-tai.json">Đường dẫn lỗi để thử</option>
+      </select></label
+    >
+    <p>
+      Dữ liệu mẫu dùng để thực hành GET. Dịch vụ cũ có thể lỗi HTTPS hoặc CORS.
+    </p>
+    <button id="consume">Consume</button>
+    <p class="animLoading">Đang tải...</p>
+    <div id="results"></div>
+    <script src="js/Exercise10.js"></script>
+  </body>
+</html>
