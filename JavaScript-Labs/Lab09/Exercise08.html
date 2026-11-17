@@ -1,26 +1,42 @@
 <!doctype html>
-<html lang="vi">
+<html>
   <head>
-    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Exercise 9.8</title>
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/lab-nav.css" />
+    <meta charset="utf-8" />
+    <title>Exercise 9.8 – Form Validation</title>
+    <link rel="stylesheet" type="text/css" href="css/lab09.css" />
+    <link rel="stylesheet" type="text/css" href="../css/fontawesome.min.css" />
+
+    <script type="text/javascript" src="js/Exercise08.js"></script>
   </head>
-  <body>
-    <a href="index.html">Quay lại Lab 09</a>
-    <h1>Exercise 9.8 – Form Validation</h1>
-    <p>
-      Kiểm tra các ô trống và báo lỗi ngay trên trang. Nội dung chỉ gồm khoảng
-      trắng cũng bị xem là trống.
-    </p>
-    <form id="sampleForm">
-      <label>Name <input type="text" id="name" /></label
-      ><label>Phone <input type="text" id="phone" /></label
-      ><label>Email <input type="text" id="email" /></label
-      ><label>Password <input type="password" id="pass" /></label
-      ><button type="submit">Register</button>
-    </form>
-    <p id="errors"></p>
-    <script src="js/Exercise08.js"></script>
+  <body class="form-body">
+    <nav class="lab-nav">
+      <a href="index.html">Lab 09</a> / Exercise 9.8 – Form Validation
+    </nav>
+
+    <div class="form-box">
+      <h1>Registration</h1>
+
+      <form method="get" action="#" id="sampleForm">
+        <hr />
+        <label id="icon" for="name"><i class="fa fa-user fa-fw"></i></label>
+        <input type="text" name="name" id="name" placeholder="Name" />
+        <label id="icon" for="email"><i class="fa fa-phone fa-fw"></i></label>
+        <input type="text" name="phone" id="phone" placeholder="Phone" />
+        <label id="icon" for="email"
+          ><i class="fa fa-envelope fa-fw"></i
+        ></label>
+        <input type="text" name="email" id="email" placeholder="Email" />
+        <label id="icon" for="pass"><i class="fa fa-key fa-fw"></i></label>
+        <input type="password" id="pass" placeholder="Password" />
+
+        <button type="submit">
+          <i class="fa fa-reply fa-fw"></i> Register
+        </button>
+      </form>
+    </div>
+
+    <div id="errors" class="visible"></div>
   </body>
 </html>

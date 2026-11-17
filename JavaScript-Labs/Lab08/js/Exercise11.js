@@ -19,17 +19,13 @@ countries.push(new Country("United Kingdom", "GB", "London", 62348447));
 
 for (var i = 0; i < countries.length; i++) {
   var c = countries[i];
+  document.write("<div class='box'>");
   document.write(
-    "<section><img width='50' alt='" +
-      c.iso +
-      "' src='flags/" +
-      c.iso +
-      ".png'><br>",
+    "<img src='flags/" + c.iso + ".png' class='boxImg' alt='" + c.iso + "'>",
   );
   for (var propertyName in c) {
-    document.write(
-      "<strong>" + propertyName + ": </strong>" + c[propertyName] + "<br>",
-    );
+    document.write("<strong>" + propertyName + ": </strong>");
+    document.write(c[propertyName] + "<br>");
   }
-  document.write("</section>");
+  document.write("</div>");
 }

@@ -2,22 +2,21 @@ var stringOne = new String("Test");
 var stringTwo = "Test";
 var stringThree = "Test";
 var stringFour = new String("Test");
-document.write("<p>typeof stringOne = " + typeof stringOne + "</p>");
-document.write("<p>typeof stringTwo = " + typeof stringTwo + "</p>");
-document.write(
-  "<p>stringOne == stringTwo: " + (stringOne == stringTwo) + "</p>",
-);
-document.write(
-  "<p>stringOne === stringTwo: " + (stringOne === stringTwo) + "</p>",
-);
-document.write(
-  "<p>stringOne == stringFour: " + (stringOne == stringFour) + "</p>",
-);
-document.write(
-  "<p>stringTwo === stringThree: " + (stringTwo === stringThree) + "</p>",
-);
+document.write(stringOne);
+document.write("<br>typeof stringOne=" + typeof stringOne);
+document.write("<br>typeof stringThree=" + typeof stringThree);
+if (stringOne == stringTwo)
+  document.write("<br>stringOne has = value to stringTwo");
+if (stringOne == stringFour)
+  document.write("<br>stringOne has = value to stringFour");
+if (stringOne === stringTwo)
+  document.write("<br>stringOne has = value and = type to stringTwo");
+if (stringTwo === stringThree)
+  document.write("<br>stringTwo has = value and = type to stringThree");
+if (stringTwo === stringFour)
+  document.write("<br>stringTwo has = value and = type to stringFour");
 var dateOne = new Date();
-document.write("<p>Ngày hiện tại: " + dateOne + "</p>");
-document.write("<p>PI = " + Math.PI + "</p>");
-document.write("<p>Căn bậc hai của 4 = " + Math.sqrt(4) + "</p>");
-document.write("<p>Số ngẫu nhiên = " + Math.random() + "</p>");
+document.write("<p>" + dateOne + "</p>");
+document.write(Math.PI + "<br>");
+document.write(Math.sqrt(4) + "<br>");
+document.write(Math.random() + "<br>");

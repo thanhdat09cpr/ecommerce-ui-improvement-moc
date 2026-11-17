@@ -1,36 +1,21 @@
 <!doctype html>
-<html lang="vi">
+<html>
   <head>
-    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Exercise 10.9</title>
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/lab-nav.css" />
+    <meta charset="utf-8" />
+    <title>Exercise 10.9 – GET Requests</title>
+
     <script src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/Exercise09.js"></script>
   </head>
   <body>
-    <a href="index.html">Quay lại Lab 10</a>
-    <h1>Exercise 10.9 – GET Requests</h1>
-    <p>
-      Gửi GET lấy JSON và duyệt kết quả bằng $.each để hiển thị danh sách thành
-      phố.
-    </p>
-    <label
-      >Nguồn dữ liệu
-      <select id="source">
-        <option value="data/cities.json">Dữ liệu mẫu trong bài</option>
-        <option
-          value="https://www.randyconnolly.com/funwebdev/services/travel/cities.php"
-        >
-          Dịch vụ trong tài liệu
-        </option>
-        <option value="data/khong-ton-tai.json">Đường dẫn lỗi để thử</option>
-      </select></label
-    >
-    <p>
-      Dữ liệu mẫu dùng để thực hành GET. Dịch vụ cũ có thể lỗi HTTPS hoặc CORS.
-    </p>
+    <nav class="lab-nav">
+      <a href="index.html">Lab 10</a> / Exercise 10.9 – GET Requests
+    </nav>
+
+    <p id="sourceInfo"></p>
     <button id="consume">Consume</button>
     <div id="results"></div>
-    <script src="js/Exercise09.js"></script>
   </body>
 </html>

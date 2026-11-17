@@ -1,20 +1,27 @@
 var msg = document.getElementById("msgArea");
+msg.value = "here is some text";
+var title = document.getElementById("pageTitle");
+title.innerHTML = "New Title";
 document.getElementById("pageTitle").innerHTML = "Even newer title";
+msg.value = document.getElementById("first").innerHTML;
+msg.value = document.getElementById("first").innerText;
 msg.value = "My class is " + msg.getAttribute("class");
-var spans = document.getElementsByTagName("span");
-for (var i = 0; i < spans.length; i++) {
-  console.log(spans[i].innerText);
+var elem = document.getElementsByTagName("textarea");
+elem[0].value = "selected by tag name";
+elem = document.getElementsByTagName("span");
+for (var i = 0; i < elem.length; i++) {
+  msg.value += "\n" + elem[i].innerText;
 }
+msg.value = "";
 var counts = document.getElementsByClassName("count-number");
-console.log("Số phần tử count-number:", counts.length);
-var firstParagraph = document.querySelector("#first p");
-msg.value += "\n" + firstParagraph.innerText;
-var ps = document.querySelectorAll("#first p");
+for (var i = 0; i < counts.length; i++) {
+  msg.value += "\n" + counts[i].innerText;
+}
+var ps = document.querySelector("#first p");
+msg.value = ps.innerHTML;
+ps = document.querySelectorAll("#first p");
 for (var i = 0; i < ps.length; i++) {
-  msg.value += "\n" + ps[i].innerHTML;
+  msg.value += ps[i].innerHTML + "\n";
 }
 msg.setAttribute("class", "hidden");
-document.getElementById("features").style.backgroundColor = "lightgreen";
-document.getElementById("show").onclick = function () {
-  msg.setAttribute("class", "message");
-};
+document.getElementById("features").style.backgroundColor = "green";

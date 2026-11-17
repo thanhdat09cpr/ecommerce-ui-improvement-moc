@@ -1,30 +1,121 @@
 <!doctype html>
-<html lang="vi">
+<html>
   <head>
-    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Exercise 10.2</title>
-    <link rel="stylesheet" href="../css/style.css" />
-    <script src="js/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="../css/lab-nav.css" />
+    <meta charset="utf-8" />
+    <title>Exercise 10.2 – Basic Selectors</title>
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/fontawesome.min.css" />
+    <link rel="stylesheet" href="css/lab10.css" />
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script>
+      window.jQuery ||
+        document.write('<script src="js/jquery-3.1.1.min.js"><\/script>');
+    </script>
   </head>
   <body>
-    <a href="index.html">Quay lại Lab 10</a>
-    <h1>Exercise 10.2 – Basic Selectors</h1>
-    <p>
-      Dùng bộ chọn jQuery để đổi chữ, đọc thuộc tính, đổi màu và thêm class.
-    </p>
-    <div id="first">
-      <h2 id="pageTitle">DOM Example</h2>
-      <p>Đoạn văn <strong>thứ nhất</strong>.</p>
-      <p>Đoạn văn thứ hai.</p>
+    <nav class="lab-nav">
+      <a href="index.html">Lab 10</a> / Exercise 10.2 – Basic Selectors
+    </nav>
+
+    <div class="container">
+      <div class="row" id="first">
+        <h1 id="pageTitle">DOM Example</h1>
+        <p>This is a sample file to be used with DOM manipulation.</p>
+        <p>
+          <textarea
+            class="form-control"
+            rows="3"
+            id="msgArea"
+            placeholder="Messages will show up here"
+          ></textarea>
+        </p>
+      </div>
+
+      <div class="row" id="stories">
+        <div class="col-md-4">
+          <img src="images/5857298322.jpg" class="img-responsive" />
+          <p>
+            Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
+            tellus ac cursus commodo, tortor mauris condimentum nibh, ut
+            fermentum massa justo sit amet risus.
+          </p>
+          <p>
+            <button class="btn btn-primary" type="button">View details</button>
+          </p>
+        </div>
+        <div class="col-md-4">
+          <img src="images/8710320515.jpg" class="img-responsive" />
+          <p>
+            Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
+            tellus ac cursus commodo, tortor mauris condimentum nibh, ut
+            fermentum massa justo sit amet risus.
+          </p>
+          <p>
+            <button class="btn btn-primary" type="button">View details</button>
+          </p>
+        </div>
+        <div class="col-md-4">
+          <img src="images/9494464567.jpg" class="img-responsive" />
+          <p>
+            Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
+            tellus ac cursus commodo, tortor mauris condimentum nibh, ut
+            fermentum massa justo sit amet risus.
+          </p>
+          <p>
+            <button class="btn btn-primary" type="button">View details</button>
+          </p>
+        </div>
+      </div>
+      <!-- end stories row -->
+
+      <div class="row" id="features">
+        <ul class="list-unstyled">
+          <li>
+            <div class="col-md-3">
+              <div class="center-icons">
+                <i class="fa fa-coffee fa-3x"></i>
+                <div class="count-number">20000</div>
+                <span class="count-title">cups of coffee</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="col-md-3">
+              <div class="center-icons">
+                <i class="fa fa-book fa-3x"></i>
+                <div class="count-number">24</div>
+                <span class="count-title">chapters</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="col-md-3">
+              <div class="center-icons">
+                <i class="fa fa-desktop fa-3x"></i>
+                <div class="count-number">48</div>
+                <span class="count-title">presentations</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="col-md-3">
+              <div class="center-icons">
+                <i class="fa fa-file-image-o fa-3x"></i>
+                <div class="count-number">560</div>
+                <span class="count-title">diagrams</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- end features row -->
     </div>
-    <textarea id="msgArea" class="message" rows="4"></textarea>
-    <div id="features">
-      <span class="count-number">20000</span> lượt xem;
-      <span class="count-number">100</span> sản phẩm
-    </div>
-    <button>Nút 1</button><button>Nút 2</button>
-    <p class="center-icons">Phần tử được thêm class selected.</p>
+    <!-- end container -->
+
     <script src="js/Exercise02.js"></script>
   </body>
 </html>

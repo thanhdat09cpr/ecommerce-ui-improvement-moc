@@ -1,18 +1,31 @@
 <!doctype html>
-<html lang="vi">
+<html lang="en">
   <head>
-    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Exercise 8.8</title>
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/lab-nav.css" />
+    <meta charset="utf-8" />
+    <title>Exercise 8.8 – JavaScript Functions</title>
+    <link rel="stylesheet" type="text/css" href="css/lab08.css" />
+    <script type="text/javascript" src="js/Exercise08.js"></script>
   </head>
   <body>
-    <a href="index.html">Quay lại Lab 08</a>
-    <h1>Exercise 8.8 – JavaScript Functions</h1>
-    <p>
-      Hàm nhận số thứ tự, trả về HTML và được gọi 5 lần. Biến box có phạm vi
-      trong hàm.
-    </p>
-    <script src="js/Exercise08.js"></script>
+    <nav class="lab-nav">
+      <a href="index.html">Lab 08</a> / Exercise 8.8 – JavaScript Functions
+    </nav>
+    <header>
+      <h1>Illustrating Function Usage</h1>
+    </header>
+
+    <h2>Output will go here</h2>
+
+    <script>
+      for (var count = 1; count < 6; count++) {
+        document.write(outputBox(count));
+      }
+    </script>
+
+    <footer>
+      <p><em>Copyright &copy; 2015</em></p>
+    </footer>
   </body>
 </html>

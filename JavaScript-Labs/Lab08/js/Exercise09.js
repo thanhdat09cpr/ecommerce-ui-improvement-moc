@@ -15,6 +15,3 @@ function calculateTotal(price, quantity) {
     })
   );
 }
-var amount = calculateTotal(15, 2);
-document.write("<p>Price: $15.00 | Quantity: 2 | Tax: 5%</p>");
-document.write("<p>Total: $" + amount.toFixed(2) + "</p>");

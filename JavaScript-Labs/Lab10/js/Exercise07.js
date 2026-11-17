@@ -1,20 +1,27 @@
-$("figure img").on("mouseover", function (e) {
-  var src = $(this).attr("src").replace("small", "medium");
-  var preview = $('<div id="preview"></div>');
-  preview.append($("<img>").attr("src", src));
-  preview.append($("<p></p>").text($(this).attr("alt")));
-  $("body").append(preview);
-  $(this).addClass("gray");
-  movePreview(e);
-  $("#preview").fadeIn(1000);
+$(function () {
+  $("figure img").on("mouseover", function (e) {
+    var alt = $(this).attr("alt");
+    var src = $(this).attr("src");
+    var newsrc = src.replace("small", "medium");
+    var preview = $('<div id="preview"></div>');
+    var image = $('<img src="' + newsrc + '">');
+    var caption = $("<p>" + alt + "</p>");
+    preview.append(image);
+    preview.append(caption);
+    $("body").append(preview);
+    $(this).addClass("gray");
+    movePreview(e);
+    $("#preview").fadeIn(1000);
+  });
+  $("figure img").on("mouseleave", removePreview);
+  $("figure img").on("mousemove", movePreview);
 });
-function movePreview(e) {
-  $("#preview")
-    .css("top", e.pageY + 10)
-    .css("left", Math.min(e.pageX + 30, Math.max(0, window.innerWidth - 380)));
-}
-$("figure img").on("mousemove", movePreview);
-$("figure img").on("mouseleave", function () {
+function removePreview() {
   $(this).removeClass("gray");
   $("#preview").remove();
-});
+}
+function movePreview(e) {
+  $("#preview")
+    .css("top", e.pageY - 10 + "px")
+    .css("left", e.pageX + 30 + "px");
+}

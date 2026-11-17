@@ -1,25 +1,30 @@
 <!doctype html>
-<html lang="vi">
+<html>
   <head>
-    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Exercise 9.6</title>
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/lab-nav.css" />
+    <meta charset="utf-8" />
+    <title>Exercise 9.6 – Debugging Events</title>
+    <link rel="stylesheet" type="text/css" href="css/lab09.css" />
+    <script type="text/javascript" src="js/Exercise06.js"></script>
   </head>
   <body>
-    <a href="index.html">Quay lại Lab 09</a>
-    <h1>Exercise 9.6 – Debugging Events</h1>
-    <p>
-      Dùng e.target.id để xác định ô phát sinh sự kiện và kiểm tra biến trong
-      debugger.
-    </p>
-    <div class="movingDiv" id="div1">This is div 1</div>
-    <div class="movingDiv" id="div2">This is div 2</div>
-    <div class="movingDiv" id="div3">This is div 3</div>
-    <p id="result">Di chuột vào một ô.</p>
-    <p>
-      Trong DevTools, đặt breakpoint tại dòng console.log, rồi xem e.target.id.
-    </p>
-    <script src="js/Exercise06.js"></script>
+    <nav class="lab-nav">
+      <a href="index.html">Lab 09</a> / Exercise 9.6 – Debugging Events
+    </nav>
+    <header>
+      <h1>DOM Timing</h1>
+    </header>
+
+    <script>
+      // add function calls here
+      for (var count = 1; count < 6; count++) {
+        document.write(outputBox(count));
+      }
+    </script>
+
+    <footer>
+      <p><em>Copyright &copy; 2015</em></p>
+    </footer>
   </body>
 </html>

@@ -1,22 +1,38 @@
 <!doctype html>
-<html lang="vi">
+<html lang="en">
   <head>
-    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Exercise 8.5</title>
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/lab-nav.css" />
+    <meta charset="utf-8" />
+    <title>Exercise 8.5 – Using the Browser Console</title>
+    <link rel="stylesheet" type="text/css" href="css/lab08.css" />
+
+    <script>
+      // alert("Hello World!");
+      console.log("script within the head element");
+      console.warn("oh no this is a warning");
+      console.error("panic!! error!!");
+    </script>
   </head>
   <body>
-    <a href="index.html">Quay lại Lab 08</a>
-    <h1>Exercise 8.5 – Using the Browser Console</h1>
-    <p>Dùng Console để xem biến và nhận biết các loại thông báo.</p>
-    <p>
-      Mở Console để xem count = 2, temp = 14 và các thông báo log, warn, error.
-    </p>
-    <p>
-      Lỗi gõ nhầm doccumment.write gây ReferenceError. Bản chạy đã sửa thành
-      document.write.
-    </p>
-    <script src="js/Exercise05.js"></script>
+    <nav class="lab-nav">
+      <a href="index.html">Lab 08</a> / Exercise 8.5 – Using the Browser Console
+    </nav>
+    <script src="js/hello.js"></script>
+
+    <header>
+      <h1>Many DIVs to illustrate</h1>
+    </header>
+
+    <div class="movingDiv" id="div1">This is div 1</div>
+    <div class="movingDiv" id="div2">This is div 2</div>
+    <div class="movingDiv" id="div3">This is div 3</div>
+    <div class="movingDiv" id="div4">This is div 4</div>
+    <div class="movingDiv" id="div5">This is div 5</div>
+    <div class="movingDiv" id="div6">This is div 6</div>
+
+    <footer>
+      <p><em>Copyright &copy; 2015</em></p>
+    </footer>
   </body>
 </html>

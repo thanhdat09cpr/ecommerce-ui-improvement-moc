@@ -1,26 +1,29 @@
 <!doctype html>
-<html lang="vi">
+<html>
   <head>
-    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Exercise 9.4</title>
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/lab-nav.css" />
+    <meta charset="utf-8" />
+    <title>Exercise 9.4 – Simple Event Handling</title>
+    <link rel="stylesheet" href="css/lab09.css" />
   </head>
   <body>
-    <a href="index.html">Quay lại Lab 09</a>
-    <h1>Exercise 9.4 – Simple Event Handling</h1>
-    <p>
-      Click để ẩn hoặc hiện nội dung. Di chuột vào ảnh để chuyển xám, đưa chuột
-      ra để khôi phục.
-    </p>
-    <img
-      class="photo"
-      id="mainImage"
-      src="images/8711645510.jpg"
-      alt="Ảnh du lịch"
-    />
-    <p id="content">Đây là nội dung được ẩn và hiện khi bấm nút.</p>
-    <button id="testButton">Hide</button>
-    <script src="js/Exercise04.js"></script>
+    <nav class="lab-nav">
+      <a href="index.html">Lab 09</a> / Exercise 9.4 – Simple Event Handling
+    </nav>
+
+    <div id="main">
+      <img src="images/8711645510.jpg" id="mainImage" alt="main image" />
+      <p id="content">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.
+      </p>
+      <button id="testButton">Hide</button>
+    </div>
+    <!-- end container -->
+
+    <script type="text/javascript" src="js/Exercise04.js"></script>
   </body>
 </html>

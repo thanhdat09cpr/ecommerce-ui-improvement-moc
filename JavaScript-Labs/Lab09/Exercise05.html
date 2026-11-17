@@ -1,17 +1,30 @@
 <!doctype html>
-<html lang="vi">
+<html>
   <head>
-    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Exercise 9.5</title>
-    <link rel="stylesheet" href="../css/style.css" />
-    <script src="js/load.js"></script>
+    <link rel="stylesheet" href="../css/lab-nav.css" />
+    <meta charset="utf-8" />
+    <title>Exercise 9.5 – Responding to Load Events</title>
+    <link rel="stylesheet" type="text/css" href="css/lab09.css" />
+    <script type="text/javascript" src="js/Exercise05.js"></script>
   </head>
   <body>
-    <a href="index.html">Quay lại Lab 09</a>
-    <h1>Exercise 9.5 – Responding to Load Events</h1>
-    <p>Đặt script trong head nhưng chờ sự kiện load rồi mới đọc DOM.</p>
-    <div class="movingDiv" id="div1">This is div 1</div>
-    <p id="result"></p>
+    <nav class="lab-nav">
+      <a href="index.html">Lab 09</a> / Exercise 9.5 – Responding to Load Events
+    </nav>
+    <header>
+      <h1>DOM Timing</h1>
+    </header>
+
+    <script>
+      // add function calls here
+      for (var count = 1; count < 6; count++) {
+        document.write(outputBox(count));
+      }
+    </script>
+
+    <footer>
+      <p><em>Copyright &copy; 2015</em></p>
+    </footer>
   </body>
 </html>

@@ -1,22 +1,28 @@
 <!doctype html>
-<html lang="vi">
+<html>
   <head>
-    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Exercise 8.1</title>
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/lab-nav.css" />
+    <meta charset="utf-8" />
+    <title>Exercise 8.1 – Enabling and Disabling JavaScript</title>
   </head>
   <body>
-    <a href="index.html">Quay lại Lab 08</a>
-    <h1>Exercise 8.1 – Enabling and Disabling JavaScript</h1>
-    <p>Kiểm tra JavaScript đang bật hay tắt bằng script và noscript.</p>
-    <script>
-      document.write("<p>You have JavaScript enabled</p>");
-    </script>
-    <noscript><p>You have JavaScript disabled</p></noscript>
+    <nav class="lab-nav">
+      <a href="index.html">Lab 08</a> / Exercise 8.1 – Enabling and Disabling
+      JavaScript
+    </nav>
     <p>
-      Tắt JavaScript trong cài đặt trang của trình duyệt rồi tải lại để xem
-      trạng thái còn lại.
+      <a href="http://examples.funwebdev.com/JavaScriptTest.php"
+        >Trang kiểm tra trong tài liệu</a
+      >
     </p>
+    <p>
+      Tại thời điểm kiểm tra, tên miền của trang gốc không phân giải được. Phần
+      dưới thực hiện lại phép thử bật/tắt JavaScript bằng script và noscript.
+    </p>
+    <script>
+      document.write("You have JavaScript enabled");
+    </script>
+    <noscript>You have JavaScript disabled</noscript>
   </body>
 </html>

@@ -1,24 +1,52 @@
 <!doctype html>
-<html lang="vi">
+<html>
   <head>
-    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Exercise 10.3</title>
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/lab-nav.css" />
+    <meta charset="utf-8" />
+
+    <title>Exercise 10.3 – Advanced Selectors</title>
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/fontawesome.min.css" />
+    <link rel="stylesheet" href="css/lab10.css" />
+
     <script src="js/jquery-3.1.1.min.js"></script>
   </head>
-  <body>
-    <a href="index.html">Quay lại Lab 10</a>
-    <h1>Exercise 10.3 – Advanced Selectors</h1>
-    <p>Chọn phần tử theo vị trí nth-child và nội dung nhãn bằng contains.</p>
-    <form id="sampleForm">
-      <label>Name <input type="text" id="name" /></label
-      ><label>Phone <input type="text" id="phone" /></label
-      ><label>Email <input type="text" id="email" /></label
-      ><label>Password <input type="password" id="pass" /></label
-      ><button type="submit">Register</button>
-    </form>
-    <p id="errors"></p>
-    <script src="js/Exercise03.js"></script>
+  <body class="form-body">
+    <nav class="lab-nav">
+      <a href="index.html">Lab 10</a> / Exercise 10.3 – Advanced Selectors
+    </nav>
+
+    <div class="form-box">
+      <h1>Registration</h1>
+      <hr />
+
+      <form method="get" action="#" name="sampleForm">
+        <label class="icon" for="username">User Name</label>
+        <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="User Name"
+        />
+
+        <label class="icon" for="email">Email</label>
+        <input type="text" name="email" id="email" placeholder="Email" />
+
+        <label class="icon" for="pass">Password</label>
+        <input type="password" name="pass1" id="pass1" placeholder="Password" />
+
+        <label class="icon" for="pass">Password Again</label>
+        <input type="password" name="pass2" id="pass2" placeholder="Password" />
+
+        <button type="submit">
+          <i class="fa fa-reply fa-fw"></i> Register
+        </button>
+      </form>
+      <div id="errors" class="hidden"></div>
+    </div>
   </body>
+
+  <script type="text/javascript" src="js/Exercise03.js"></script>
 </html>
