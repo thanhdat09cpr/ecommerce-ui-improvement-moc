@@ -1,0 +1,19 @@
+* { box-sizing: border-box; }
+body { margin: 0; background: #f6f7f8; color: #263238; font: 16px/1.65 Arial, sans-serif; }
+header, main, footer { max-width: 1000px; margin: auto; padding: 24px; }
+header { padding-top: 40px; }
+h1 { margin: 8px 0 24px; color: #125761; font-size: 32px; }
+h2 { color: #125761; font-size: 23px; }
+a { color: #075d86; text-underline-offset: 3px; }
+a:hover { color: #ad4c10; }
+.eyebrow { font-size: 12px; letter-spacing: 1px; }
+.student { display: flex; align-items: center; gap: 20px; }
+.student img { width: 80px; height: 80px; }
+.student p { margin: 4px 0; }
+section { background: white; padding: 24px; margin-bottom: 20px; border: 1px solid #dce2e4; border-radius: 8px; }
+section h2 { margin-top: 0; }
+.exercises { padding-left: 24px; }
+.exercises li { padding: 12px 0; border-bottom: 1px solid #eee; }
+.exercises li p { margin: 4px 0; color: #53636a; font-size: 14px; }
+footer { padding-bottom: 40px; }
+@media (max-width: 600px) { header, main, footer { padding: 16px; } h1 { font-size: 26px; } section { padding: 18px; } }

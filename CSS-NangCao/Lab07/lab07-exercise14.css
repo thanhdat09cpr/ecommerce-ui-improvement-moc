@@ -1,0 +1,12 @@
+figure {
+    margin: 2em;
+    padding: 1em;
+    background: #FFCC80;
+    width: 200px;
+
+}
+
+/* Các phép thử: rotate(45deg), skew(-20deg),
+   translateX(100px) translateY(-30px). Bản cuối: */
+figure { transform: rotate(15deg); }
+figure img { transform: rotate(45deg) scale(0.5); }
